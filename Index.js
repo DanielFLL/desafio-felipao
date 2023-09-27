@@ -1,6 +1,9 @@
-let nome = "Aquiles"
-let XP = 7560
+do {
+let nome = prompt("Digite o nome do Herói: ")
+let txtXP = prompt("Digite sua experiência (XP): ")
+let XP = parseInt(txtXP)
 let nivel
+
 
 if (XP <= 1000) {
     nivel = "Ferro"
@@ -28,3 +31,6 @@ else if (XP >= 10001) {
 }
 
 console.log("O Herói: " + nome + " está no nível: " + nivel)
+
+let resp = prompt ("Deseja repetir a ação? [S/N]")
+} while (resp !== "N")
